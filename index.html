@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div class="cart-badge" id="cartBadge"> 🛒 <span id="cartCount">0</span> </div>
+    <div class="theme-toggle"> <button id="toggleThemeBtn">🌙 Dark Mode</button> </div>
+
+
+    <section class="product-gallery">
+        <div class="main-image">
+          <img id="currentImage" src="assets/images/P1.jpg" alt="Main Product Image">
+        </div>
+        <div class="thumbnail-container">
+          <div class="thumbnails" id="thumbnails">
+            <img src="assets/images/C.jpg" class="thumbnail active" alt="Thumbnail 1">
+            <img src="assets/images/Sn.jpg" class="thumbnail" alt="Thumbnail 2">
+            <img src="assets/images/DJ.jpg" class="thumbnail" alt="Thumbnail 3">
+            <img src="assets/images/WoS.jpg" class="thumbnail" alt="Thumbnail 4">
+            <img src="assets/images/T.jpg" class="thumbnail" alt="Thumbnail 5">
+            <img src="assets/images/TB.jpg" class="thumbnail" alt="Thumbnail 6">
+            <img src="assets/images/P1.jpg" class="thumbnail" alt="Thumbnail 7">
+            <img src="assets/images/SpS.jpg" class="thumbnail" alt="Thumbnail 8">
+            <img src="assets/images/W.jpg" class="thumbnail" alt="Thumbnail 9">
+            <img src="assets/images/SP.jpg" class="thumbnail" alt="Thumbnail 10">
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Size Chart Button -->
+<div class="size-chart-wrapper">
+    <button id="openSizeChartBtn" class="size-chart-btn">Size Chart</button>
+  </div>
+  
+  <!-- Size Chart Modal -->
+  <div id="sizeChartModal" class="modal-overlay">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close-btn">&times;</span>
+      <h2>Size Chart</h2>
+      <table class="size-chart-table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Chest (inches)</th>
+            <th>Waist (inches)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>34–36</td>
+            <td>28–30</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>38–40</td>
+            <td>32–34</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>42–44</td>
+            <td>36–38</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Variant Selection --> 
+<div class="variant-wrapper"> 
+    <div class="variant-group"> 
+        <h3>Select Color:</h3> 
+        <div class="color-options"> 
+            <div class="color-swatch" data-color="red" style="background-color: red;"></div> 
+            <div class="color-swatch" data-color="blue" style="background-color: blue;"></div> 
+            <div class="color-swatch" data-color="green" style="background-color: green;"></div> 
+        </div> 
+    </div> 
+    <div class="variant-group"> 
+        <h3>Select Size:</h3> 
+        <select id="sizeSelector"> 
+            <option value="" disabled selected>Choose size</option> <option value="S">Small (S)</option> 
+            <option value="M">Medium (M)</option> <option value="L">Large (L)</option> 
+        </select> 
+    </div> 
+</div>
+  
+<!-- Compare Colours Button --> 
+<div class="compare-wrapper"> 
+    <button id="compareBtn" class="compare-btn">Compare Colours</button>
+ </div> <!-- Compare Modal --> 
+<div id="compareModal" class="modal-overlay">
+     <div class="modal-content"> 
+        <span id="closeCompareBtn" class="close-btn">&times;</span> 
+        <h2>Compare Colours</h2> 
+        <div id="compareSwatches" class="compare-swatches"></div> 
+    </div> 
+</div>
+      
+<!-- Pair Well With Section --> 
+ <section class="pair-well-section"> 
+    <h2>Pair Well With</h2> 
+    <div class="pair-carousel-wrapper"> 
+        <button id="scrollLeft" class="carousel-btn left">&lt;</button> 
+        <div class="pair-carousel" id="pairCarousel">
+            <div class="pair-item">
+              <img src="assets/images/W.jpg" alt="Product A">
+              <p>Leather Wallet</p>
+              <span>$29.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/LB.jpg" alt="Product B">
+              <p>Classic Belt</p>
+              <span>$19.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/SpS.jpg" alt="Product C">
+              <p>Sport Socks</p>
+              <span>$9.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/CC.jpg" alt="Product D">
+              <p>Canvas Cap</p>
+              <span>$14.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/SS.jpg" alt="Product E">
+              <p>Sweat Shirt</p>
+              <span>$29.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/J.jpg" alt="Product F">
+              <p>Denim Jeans</p>
+              <span>$35.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/DJ.jpg" alt="Product G">
+              <p>Denim Jacket</p>
+              <span>$39.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/C.jpg" alt="Product H">
+              <p>Cap</p>
+              <span>$19.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/Sn.jpg" alt="Product I">
+              <p>Casual Sneakers</p>
+              <span>$39.99</span>
+            </div>
+            <div class="pair-item">
+              <img src="assets/images/T.jpg" alt="Product J">
+              <p>T-Shirt</p>
+              <span>$24.99</span>
+            </div>
+          </div>
+          
+          <button id="scrollRight" class="carousel-btn right">&gt;</button>
+        </div> 
+    </section>          
+
+
+
+<!-- Product Bundle Suggestion --> 
+ <section class="bundle-section"> 
+    <h2>Complete the Look – Bundle Offer</h2> 
+    <div class="bundle-items"> 
+        <div class="bundle-product" data-price="39.99"> 
+            <img src="assets/images/CS.jpg" alt="Shirt"> 
+            <p>Casual Shirt</p> 
+            <span class="price">$39.99</span> 
+        </div> 
+        <div class="bundle-product" data-price="24.99"> 
+            <img src="assets/images/SP.jpg" alt="Pants"> 
+            <p>Stretch Pants</p> 
+            <span class="price">$24.99</span> 
+        </div> 
+        <div class="bundle-product" data-price="14.99"> 
+            <img src="assets/images/WS.jpg" alt="Shoes"> 
+            <p>Walking Shoes</p> 
+            <span class="price">$49.99</span> 
+        </div> 
+    </div> 
+    <div class="bundle-summary"> 
+        <p>Total Price: <strong id="bundleTotal">$0.00</strong></p> 
+        <button id="addBundleBtn">Add Bundle to Cart</button> 
+    </div> 
+</section>
+
+<!-- Product Info Tabs --> 
+<section class="product-tabs"> 
+    <div class="tab-buttons"> 
+        <button class="tab-btn active" data-tab="description">Description</button> 
+        <button class="tab-btn" data-tab="info">Product Info</button> 
+        <button class="tab-btn" data-tab="shipping">Shipping</button> 
+    </div> 
+    <div class="tab-content"> 
+        <div class="tab-panel active" id="description"> 
+            <p>This casual shirt is crafted with 100% cotton, perfect for daily wear or outings.</p> 
+        </div> 
+        <div class="tab-panel" id="info"> 
+            <ul> 
+                <li>Material: Cotton</li> 
+                <li>Fit: Regular</li> 
+                <li>Care: Machine washable</li> 
+            </ul> 
+        </div>
+        <div class="tab-panel" id="shipping"> 
+            <p>Free shipping on orders over $50. Delivery in 3–5 business days.</p> 
+        </div> 
+    </div> 
+</section>
+
+
+    
+
+    <!-- Related Products Section --> 
+     <section class="related-products"> 
+        <h2>Related Products</h2> 
+        <div class="related-grid"> 
+            <div class="related-item"> 
+                <img src="assets/images/H.jpg" alt="Related 1"> 
+                <p class="related-name">Hoody</p> 
+                <span>$49.99</span> 
+                <button class="add-related-btn">Add to Cart</button> 
+            </div> 
+            <div class="related-item"> 
+                <img src="assets/images/KS.jpg" alt="Related 2"> 
+                <p class="related-name">Knit Sweater</p> 
+                <span>$59.99</span> 
+                <button class="add-related-btn">Add to Cart</button> 
+            </div> 
+            <div class="related-item"> 
+                <img src="assets/images/WoS.jpg" alt="Related 3"> 
+                <p class="related-name">Wool Scarf</p> 
+                <span>$40.99</span> 
+                <button class="add-related-btn">Add to Cart</button> 
+            </div> 
+            <div class="related-item"> 
+                <img src="assets/images/TB.jpg" alt="Related 4"> 
+                <p class="related-name">Travel Backpack</p> 
+                <span>$59.99</span> 
+                <button class="add-related-btn">Add to Cart</button> 
+            </div> 
+        </div> 
+    </section>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
