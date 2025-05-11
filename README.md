@@ -1,50 +1,78 @@
-Product Page
-📌 Overview
-This is a fully responsive and interactive product display page developed as part of a coding assessment. It includes dynamic elements such as image galleries, modals, product variant selectors, a carousel, and persistent user preferences using localStorage. The page is built using HTML, CSS, and vanilla JavaScript.
+# Shopify-like Product Page
 
-✨ Features Implemented
-✅ Image Gallery with thumbnail switching
-✅ Size Chart modal popup
-✅ Product variant selection (Color & Size)
-✅ Compare Colours modal with multi-swatch selection
-✅ "Pair Well With" horizontal product carousel with scroll buttons
-✅ Product Bundle suggestion section with total price calculation
-✅ Tabbed content area for Description / Product Info / Shipping
-✅ Responsive Related Products grid with Add to Cart buttons
-✅ Floating cart badge with real-time item counter
-✅ Zoom effect on main product image
-✅ Theme toggle (Light / Dark mode) with localStorage persistence
-✅ Persist selected Color and Size using localStorage
+## 🛍️ Overview
 
+This project is a modern, responsive product page inspired by Shopify's product experience. It showcases a rich user interface built using vanilla HTML, CSS, and JavaScript. The page includes an image gallery, variant selection, size chart modal, bundled product suggestions, and interactive UI features to simulate a full e-commerce product page.
 
-🚀 How to Run Locally
-Clone or download this repository:
+## ✨ Features Implemented
 
-bash
-Copy
-Edit
-git clone https://github.com/abhitripathi2/shopify-product-page.git
-Open the project folder:
+- **Product Image Gallery**
+  - Main image display with interactive thumbnails
+  - Smooth zoom-in effect on hover
 
-bash
-Copy
-Edit
-cd shopify-product-page
-Make sure all images are in the /assets/images/ folder.
+- **Size Chart Modal**
+  - Button to toggle a modal with a size comparison table
+  - Overlay and close functionality
 
-Open index.html directly in your web browser:
+- **Variant Selection**
+  - Color swatches for product color selection
+  - Size dropdown menu for easy selection
 
-You can right-click → "Open with Live Server" (if using VS Code + Live Server)
+- **Compare Colours Modal**
+  - Green-themed button and modal to compare selected color swatches
 
-Or simply double-click index.html to launch it in a browser
+- **"Pair Well With" Carousel**
+  - Horizontally scrollable list of related products
+  - Navigation buttons for carousel control
 
-No installation or server required — runs entirely in the browser using plain HTML, CSS, and JS.
+- **Bundle Section**
+  - Group of products that can be purchased together
+  - Summary and "Add to Bundle" button
 
-🛠 Tech Stack
-HTML5
+- **Tabbed Product Information**
+  - Tabs for product description, reviews, and specifications
+  - Responsive tab switching
 
-CSS3
+- **Related Products Grid**
+  - Grid layout showing additional product suggestions
+  - Add to cart buttons with hover effects
 
-JavaScript (ES6, no libraries)
+- **Cart Badge**
+  - Fixed cart icon at the top-right corner
+  - Visually styled to stand out
 
-No frameworks or build tools
+- **Theme Toggle**
+  - Dark mode toggle button
+  - Fully themed components with dark styling
+
+## 🛠️ How to Run Locally
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/abhitripathi2/shopify-like-product-page.git
+   cd shopify-like-product-page
+
+2.Open in Browser
+
+Simply open the index.html file in your preferred web browser:
+
+    Double-click index.html
+
+    Or open via VS Code using Live Server extension
+
+3.Customize (Optional)
+
+You can replace product images, text content, and tweak styles in:
+
+    index.html — for structure/content
+
+    styles.css — for styling
+    
+
+## 📁 File Structure
+shopify-like-product-page/
+├── index.html
+├── styles.css
+├── script.js (optional for interaction)
+└── assets/ (images or other media)
